@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Lapak China</title>
+  </head>
+  <style>
+    * {
+      font-family: "Poppins", sans-serif;
+    }
+    .bg-red {
+      background-color: #dc2238;
+    }
+    .navbar {
+      background-color: #dc2238;
+    }
+    .nav-item {
+      margin: 0 1rem;
+    }
+    .header {
+      background-color: #dc2238;
+    }
+    .header .img-header {
+      width: 40%;
+      position: relative;
+      z-index: 1;
+      transform: scale(2);
+      margin-top: 9em;
+    }
+    .main {
+      position: relative;
+      z-index: 2;
+    }
+
+    #step {
+      margin-top: -1rem;
+    }
+    .step {
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+    .main .advantages .card {
+      border: 1px solid red;
+      background-color: #f3f3f3;
+    }
+    .main .advantages .card .card-title {
+      color: #dc2238;
+      font-weight: 700;
+      min-height: 44px;
+    }
+    .main .advantages .card .card-text {
+      font-weight: 600;
+      line-height: 18px;
+    }
+    .btn-oci {
+      background-color: #dc2238;
+      color: #fff;
+      margin-top: 1rem;
+      margin-bottom: 5rem;
+      border-radius: 15px;
+    }
+    .category .card .card-title {
+      min-height: 47px;
+      align-items: center;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    .card {
+      box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 25px;
+    }
+    .reason {
+      font-size: 20px;
+    }
+
+    @media only screen and (min-width: 992px) {
+      .header .img-header {
+        margin-bottom: 3rem;
+        width: 40%;
+        transform: scale(1);
+        margin-top: 0;
+      }
+
+      .reason {
+        font-size: 28px;
+      }
+
+      #step {
+        margin-top: -8rem;
+      }
+    }
+  </style>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark top-0 p-3"
+      style="z-index: 9"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/" target="_blank">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/logo-lapak-china.png?v=1630662213"
+            alt="img-fluid"
+            width="200"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          style="border: 2px solid #ffffff"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-center ms-auto">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/"
+              target="_blank"
+              >How It Works</a
+            >
+            <a
+              class="nav-link mx-2 active"
+              href="/pages/tentang-ocistok-com"
+              target="_blank"
+              >Features</a
+            >
+            <a class="nav-link mx-2 btn-signup active" href="/account/register"
+              >Pricing</a
+            >
+            <a class="nav-link mx-2 btn-login active" href="/account/login"
+              >FAQ</a
+            >
+            <a
+              class="nav-link mx-1 px-5 rounded-pill bg-white text-dark"
+              href="/account/login"
+              >Get App</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header">
+      <div class="container">
+        <div class="row">
+          <div
+            class="
+              col-lg-6 col-12
+              mt-5
+              d-flex
+              flex-column
+              text-white text-center text-lg-start
+            "
+          >
+            <h1 class="fw-bold">Belanja Barang Impor China Eceran & Grosir</h1>
+            <h3>Langsung Dari 1 Aplikasi</h3>
+            <p>
+              Temukan Jutaan Produk Import China TERMURAH Untuk Usaha Ataupun
+              Pemakaian Pribadi
+            </p>
+            <div class="flex-row">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/google-play-badge.png?v=1630639152"
+                class="img-fluid"
+                width="165"
+                alt=""
+              />
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/appstore.png?v=1630639152"
+                class="img-fluid"
+                width="125"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 mt-4 mt-lg-0 text-center">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/hp-lapakchina2.png?v=1630650493"
+              class="img-header"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="row step mb-5 p-5" id="step">
+          <div class="col-12 py-1 text-center">
+            <h3>Cara Mudah Belanja Import di LapakChina</h3>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <i class="bi bi-search" style="font-size: 4rem"></i>
+            <p>Cari & Pilih Produk Melalui Aplikasi</p>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <i class="bi bi-credit-card" style="font-size: 4rem"></i>
+            <p>Melakukan Pembayaran Barang</p>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <i class="bi bi-credit-card" style="font-size: 4rem"></i>
+            <p>Melakukan Pembayaran Harga Volume & Ongkir</p>
+          </div>
+          <div class="col-lg-3 col-12 text-center">
+            <i class="bi bi-cart3" style="font-size: 4rem"></i>
+            <p>Tunggu Barang Sampai ke Lokasi</p>
+          </div>
+        </div>
+
+        <div class="row d-flex align-items-center mt-5">
+          <div class="col-lg-6 order-1 order-lg-0 text-center col-12">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/IMG_5011_LandingPage.png?v=1630664302"
+              class="img-fluid w-75"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-6 order-0 order-lg-1 col-12">
+            <h2 class="fw-bold">Tentang Aplikasi LapakChina</h2>
+            <p>
+              <strong>LapakChina</strong> adalah aplikasi belanja import China
+              dalam jumlah eceran ataupun grosir langsung dari supplier serta
+              marketplace terkemuka di China seperti 1688, taobao, alibaba,
+              aliexpress, dan masih banyak lagi
+            </p>
+            <p>
+              Aplikasi LapakChina didesain khusus seperti tampilan Marketplace
+              pada umumnya sehingga para pelanggan dapat berbelanja kebutuhannya
+              dengan cepat, mudah, serta aman karena
+              <strong>#SemuaAda</strong> di <strong>LapakChina</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-red mb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="
+                col-12
+                d-flex
+                justify-content-center
+                align-items-center
+                text-white
+                pt-2
+              "
+            >
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/HP-LC_banner2.png?v=1630664301"
+                class="img-fluid"
+                width="90"
+                alt=""
+              />
+              <div
+                class="
+                  border-end border-top border-bottom
+                  text-center
+                  px-0 px-lg-4
+                  fw-bold
+                  reason
+                "
+              >
+                Mengapa Harus Belanja <br />
+                Import China di LapakChina?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-12">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/aplikasi.png?v=1630656891"
+                    class="img-fluid"
+                    loading="lazy"
+                    alt="kemudahan belanja"
+                  />
+                </div>
+                <div class="col-9">
+                  <h6 class="header__text">
+                    <strong>Belanja Import Hanya Dengan 1 Aplikasi</strong>
+                  </h6>
+                  <p>
+                    <strong>Sekarang belanja import ga perlu ribet</strong>,
+                    cukup dengan 1 Aplikasi jutaan barang Import China bisa kamu
+                    cari disana.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/murah.png?v=1630656891"
+                    class="img-fluid"
+                    loading="lazy"
+                    alt="harga all in"
+                  />
+                </div>
+                <div class="col-9">
+                  <h6 class="header__text">
+                    <strong>Harga Dijamin Murah</strong>
+                  </h6>
+                  <p>
+                    <strong>Harga di LapakChina pastinya dijamin murah!</strong>
+                    Mau beli satuan? Bisa! Mau beli grosir untuk usaha? Untung
+                    Banget!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/marketplce.png?v=1630656891"
+                    class="img-fluid"
+                    loading="lazy"
+                    alt="keuntungan"
+                  />
+                </div>
+                <div class="col-9">
+                  <h6 class="header__text">
+                    <strong>Belanja Semudah di Marketplace</strong>
+                  </h6>
+                  <p>
+                    <strong
+                      >Tampilan Apps LapakChina sudah seperti di
+                      Marketplace</strong
+                    >
+                    pada umumnya sehingga pelanggan dapat belanja kebutuhan
+                    import dengan sangat mudah dan cepat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/pengiriman.png?v=1630656891"
+                    class="img-fluid"
+                    loading="lazy"
+                    alt="refund"
+                  />
+                </div>
+                <div class="col-9">
+                  <p class="header__text">
+                    <strong>Aman Dengan Garansi Pengiriman</strong>
+                  </p>
+                  <p>
+                    <strong
+                      >LapakChina memberikan pilihan refund guarantee
+                      100%*</strong
+                    >
+                    untuk memastikan pengiriman barang yang dipesan oleh
+                    Customer dijamin aman.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-3">
+              <div class="row">
+                <div class="col-3">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/produk.png?v=1630656891"
+                    class="img-fluid"
+                    loading="lazy"
+                    alt="free ongkir"
+                  />
+                </div>
+                <div class="col-9">
+                  <h6 class="header__text">
+                    <strong>Jutaan Produk Unik</strong>
+                  </h6>
+                  <p>
+                    LapakChina menyediakan
+                    <strong
+                      >jutaan produk unik yang pastinya lengkap banget!</strong
+                    >
+                    Jadi, mau import barang apa aja #SemuaBisa dan #SemuaAda.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container category">
+        <div class="row row-cols-2 row-cols-lg-4 g-4">
+          <div class="col-12 mb-3 text-center">
+            <h2>Ribuan Kategori Produk Import</h2>
+          </div>
+          <div class="col mt-4 pt-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fashion</h5>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/fashion.png?v=1630639152"
+                class="card-img-bottom"
+                alt="Produk Fashion"
+              />
+            </div>
+          </div>
+          <div class="col mt-4 pt-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Perlengkapan Rumah</h5>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/perabotan.png?v=1630639153"
+                class="card-img-bottom"
+                alt="Perlengkapan Rumah"
+              />
+            </div>
+          </div>
+          <div class="col mt-4 pt-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Elektronik</h5>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/elektronik.png?v=1630639152"
+                class="card-img-bottom"
+                alt="Produk Elektronik"
+              />
+            </div>
+          </div>
+          <div class="col mt-4 pt-3 text-center">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Alat Kesehatan</h5>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/alat-kesehatan.png?v=1630639152"
+                class="card-img-bottom"
+                alt="Produk Alat Kesehatan"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-red mt-5 text-white">
+        <div class="container py-4">
+          <div class="row d-flex align-items-center">
+            <div class="col-12 justify-content-center text-center">
+              <h4>Tunggu Apa Lagi?</h4>
+              <h2 class="fw-bold">Instal Sekarang</h2>
+              <p>Nikmati kemudahan belanja barang import dalam satu aplikasi</p>
+              <div class="flex-row text-center">
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/google-play-badge.png?v=1630639152"
+                  class="img-fluid"
+                  width="165"
+                  alt=""
+                />
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0268/7480/6307/files/appstore.png?v=1630639152"
+                  class="img-fluid"
+                  width="125"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-5 text-center">
+            <h2>Masih Bingung?</h2>
+            <button class="btn btn-oci">
+              <h4>Tanya CS Sekarang !</h4>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
